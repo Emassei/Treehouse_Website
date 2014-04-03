@@ -1,0 +1,77 @@
+body{
+	background: #303030;
+	font: 1.1em sans-serif;
+}
+.wrap{
+	box-sizing: border-box;
+	margin: 70px auto;
+	padding: 5px;
+	width: 600px;
+	border-radius: 10px;
+	background: #222;
+	box-shadow: inset 0 0 1px rgba(0,0,0,.6), 0 1px 0 rgba(255,255,255,.1);
+}
+.prog-bar{
+	height: 60px;
+	border-radius: 5px;
+	background: -webkit-repeating-linear-gradient(-45deg, rgba(255,255,255,.1), rgba(255,255,255,0) 12px),
+		-webkit-linear-gradient(#F5A8A8, #F08080);
+	
+	-webkit-animation-name: slide;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function:ease-in-out;
+}
+
+/*Animations key frame!!!*/
+
+@-webkit-keyframes slide{
+	0% 	    { width:   0%; }
+	30%,
+	60%		{ width: 50%;  }
+	70%		{ width: 80%;}
+	100%        { width: 100%; }
+}
+
+
+/*---------------------------------------------------------------------
+
+.prog-bar{
+	height: 60px;
+	border-radius: 5px;
+	background: -webkit-repeating-linear-gradient(-45deg, rgba(255,255,255,.1), rgba(255,255,255,0) 12px),
+		-webkit-linear-gradient(#F5A8A8, #F08080);
+	
+	-webkit-animation-name: slide;
+	-webkit-animation-duration: 5s;
+}
+
+@-webkit-keyframes slide{
+	from 	 {width:   0%;}
+	to       {width: 100%;}
+}
+
+or we can use this
+
+@-webkit-keyframes slide{
+	0% 	 	   {width:   0%;}
+	100%       {width: 100%;}
+}
+
+
+This is how we create an animation progress bar:
+1. we create the animation under keyframe and give it a name "slide"
+2. establish some values from - to and a width some percentages
+3. then we apply it to the prog bar, through the animation name: slide
+4. and set its animation duration. 
+
+----------------------------------------------------------------------------
+@-webkit-keyframes slide{
+	0% 	    { width:   0%; }
+	30%,
+	60%		{ width: 50%;  }
+	70%		{ width: 80%;}
+	100%        { width: 100%; }
+}
+
+This stops the progress bar a certain intervals 
+*/

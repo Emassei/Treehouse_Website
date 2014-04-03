@@ -1,0 +1,165 @@
+body{
+	background: #F0FCFF url('C:/Users/User/Desktop/webPage/Pictures/Page%207/island.gif') repeat-x 100% -460px;
+}
+.links{
+	background: url('C:/Users/User/Desktop/webPage/Pictures/Page%207/island.gif') no-repeat 100% -60px;
+	border: solid black;
+	background-color: black;
+	border-radius: 15px;
+	position: absolute;
+	bottom: 0%;
+	width: 180px;
+	text-align: center;
+	
+	
+}
+.boat{
+	width: 380px;
+	position: absolute;
+	top: 40%;
+	left: 35%;
+}
+.boat img{
+	width: 100%
+}
+.boat::after{
+	content: "";
+	display: block;
+	width: 400px;
+	height: 400px;
+	background: url('C:/Users/User/Desktop/webPage/Pictures/Page%207/Smoke.png') no-repeat;
+	background-size: 400px;
+	position: absolute;
+	top: 25%;
+	left: -35%;
+	opacity: 0;
+}	
+
+.mike{
+	width: 180px;
+	position: absolute;
+	top: 55%;
+	left: -15%;
+	opacity:.5;
+	-webkit-transform: rotateZ:(-5deg);
+}
+
+/*-------------------------Animation selectors--------------*/
+.boat{
+	-webkit-animation: rock-boat 2s ease-in-out infinite;
+}
+
+.boat::after{
+	-webkit-animation: steam 10s 0s infinite;
+}
+
+body{
+	-webkit-animation: bg-move 8s ease-out forwards;
+}
+.mike{
+	-webkit-animation: mike-move 6s 6s ease-out forwards,
+					   mike-float 3.2s infinite;
+}
+
+
+
+
+/*--------------------------Actual animations-------------------*/
+@-webkit-keyframes rock-boat{
+	50%   {-webkit-transform: rotate(-5deg) translate(-20px);}
+
+}
+
+@-webkit-keyframes steam{
+	40%,
+	60% {opacity: 1;}
+	100%{ -webkit-transform: translate(-25%, -35%) rotateZ(20deg);}
+}
+
+@-webkit-keyframes mike-move{
+	100% { left: 12%;}
+}
+
+@-webkit-keyframes mike-float{
+	50% {-webkit-transform: rotateZ(5deg) translateY(-5px);}
+}
+
+/*---------------------------Background animation---------*/
+
+@-webkit-keyframes bg-move{
+	0%    {background-position: 100% -560px;}
+	100%    {background-position: -350% -560px;}
+}
+
+
+/* ------------------My own animation*-------------------------*/
+.boat::before{
+	content: "";
+	display: block;
+	width: 400px;
+	height: 400px;
+	background: url('C:/Users/User/Desktop/webPage/Pictures/Page%207/Die.gif') no-repeat;
+	background-size: 400px;
+	position: absolute;
+	top: 40%;
+	left: -25%;
+	opacity: 0;
+	-webkit-animation: die 5s ease-out infinite;
+}	
+
+@-webkit-keyframes die{
+	40%,
+	60% {opacity:1;}
+	100%{ -webkit-transform: translate(25%, 35%) rotateZ(-25deg);}
+}
+
+
+/* ---------------------------my other animation------------------
+
+.mike::after{
+	content: "";
+	display: block;
+	width: 400px;
+	height: 400px;
+	background: url('C:/Users/User/Desktop/webPage/Pictures/Page%207/We%20Kill.gif') no-repeat;
+	background-size: 400px;
+	position: absolute;
+	top: 20%;
+	left: -25%;
+	opacity: 0;
+	-webkit-animation: kill 10s ease-out infinite;
+}	
+
+@-webkit-keyframes kill{
+	40%,
+	60% {opacity:1;}
+	100%{ -webkit-transform: translate(50%, 50%) rotateZ(-25deg);}
+}
+----------------------------------------------------*/
+
+/*
+.boat{
+	-webkit-animation: rock-boat 3s ease-in-out infinite;
+}
+
+@-webkit-keyframes rock-boat{
+	50%   {-webkit-transform: rotate(-5deg) translate(-20px);}
+}
+
+This is to create a rocking effect on the boat
+------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+

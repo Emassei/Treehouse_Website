@@ -1,0 +1,50 @@
+/*Css*/
+
+body{
+	margin: 40px 0;
+	background: #203542;
+	font-size: 1.3em;
+	font-family: sans-serif;
+}
+.main{
+	margin: 10px auto;
+	padding: 20px;
+	width: 80%;
+	border: 2px solid #1s2e3a;
+	border-radius: 10px;
+	background: #3e5b70;
+	list-style-type: none;
+}
+.links{
+	margin: 10px auto;
+	padding: 20px;
+	width: 80%;
+	border: 2px solid #1s2e3a;
+	border-radius: 10px;
+	background: #3e5b70;
+	list-style-type: none;
+}
+img{
+	border-radius: 15%;
+	border: solid black;
+	display: block;
+	text-align: center;
+	margin: auto;
+	max-width: 100%;
+}
+
+.links{
+	display:-webkit-flex;
+	-webkit-justify-content: space-between;
+	-webkit-flex-wrap:wrap;
+}
+
+.main{
+	-webkit-column-gap: 3 em;
+	-webkit-columns: 250px 2;
+	-webkit-column-rule: 2px dotted #070641;
+}
+h1{
+	-webkit-column-span: all;
+	text-align: center;
+}

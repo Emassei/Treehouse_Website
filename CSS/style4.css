@@ -1,0 +1,133 @@
+body{
+	padding: 20px;
+	background:steelblue;
+}
+h1{
+	text-align: center;
+	font: 100px "times new roman", serif;
+	border: solid black;
+	border-radius: 15px;
+	background: white;
+	width: 50%;
+	margin: 10px auto;
+	box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
+.wrap{
+	margin: 0 auto;
+	padding: 110px 0;
+	width: 90%;
+	height: 250px;
+	background: #f0fcff;
+	box-shadow: 0 0 20px rgba(0,0,0,.5);
+	border: solid black;
+}
+.box{
+	margin: auto;
+	width: 150px;
+}
+.ralph1{
+	display: block;
+	max-width: 262px;
+	max-height: 262px;
+	position: absolute;
+}
+.ralph2{
+	display:block;
+	max-width: 262px;
+	max-height: 262px;
+	transition: 1s ease-in-out;
+	position: absolute;
+}
+.ralph3{
+	display:block;
+	max-width: 262px;
+	max-height: 262px;
+	transition: 1s ease-in-out;
+	position: absolute;
+}
+.ralph4{
+	display:block;
+	max-width: 262px;
+	max-height: 262px;
+	transition: 1s ease-in-out;
+	position: absolute;
+}
+.ralph5{
+	display:block;
+	max-width: 262px;
+	max-height: 262px;
+	transition: 1s ease-in-out;
+	position: absolute;
+}
+.ralph6{
+	display:block;
+	max-width: 262px;
+	max-height: 262px;
+	transition: 1s ease-in-out;
+	position: absolute;
+}
+.ralph7{
+	display:block;
+	max-width: 262px;
+	max-height: 262px;
+	transition: 1s ease-in-out;
+	position: absolute;
+}
+.wrap:hover .ralph2{
+	-webkit-transform: scale(1) rotate(360deg) translateX(100%);
+}
+.wrap:hover .ralph3{
+	-webkit-transform: scale(1) rotate(360deg) translateX(-100%);
+}
+.wrap:hover .ralph4{
+	-webkit-transform: scale(1) rotate(360deg) translateX(200%);
+}
+.wrap:hover .ralph5{
+	-webkit-transform: scale(1) rotate(360deg) translateX(-200%);
+}
+.wrap:hover .ralph6{
+	-webkit-transform: scale(1) rotate(360deg) translateX(300%);
+}
+.wrap:hover .ralph7{
+	-webkit-transform: scale(1) rotate(360deg) translateX(-300%);
+}
+.links{
+	text-align: center;
+	margin: 30px auto;
+	border: solid black;
+	border-radius: 15px;
+	background-color: white;
+	max-width: 20%;
+	display: block;
+}
+
+/* This is to make the object rotate and also place the
+center of rotation!
+.wrap:hover .mike{
+	-webkit-transform: rotate(100turn);
+	-webkit-transform-origin: top right;
+}
+
+This scales the object to a larger size based on either
+the x or y axis, or if the value is left out, both!
+.wrap:hover .mike{
+	-webkit-transform: scale(2);
+}
+
+This skews the object according to a degree based on the
+x or y axis.  
+
+.wrap:hover .mike{
+	-webkit-transform: skewY(-45deg);
+}
+This allows a image to move, first by the x axis and then y
+.wrap:hover .ralph2{
+	-webkit-transform: translate(200px, 30%);
+}
+
+This shows combining the different methods!
+.wrap:hover .ralph2{
+	-webkit-transform: scale(1.5) rotate(360deg) translateX(100%);
+}
+
+*/

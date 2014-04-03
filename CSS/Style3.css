@@ -1,0 +1,43 @@
+
+/*css*/
+h1{
+	text-align: center;
+}
+body{
+	margin: 40px 0;
+	background: #203542;
+	font-size: 1.3em;
+	font-family: sans-serif;
+}
+.wrap{
+	margin: 0 auto;
+	padding: 15px;
+	width: 850px;
+	height: 300px;
+	box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
+.box{
+	width: 35%;
+	height: 100%;
+	border-radius: 15px;
+	background: darkred;
+	-webkit-transition: margin 1s linear; 
+}
+.box img{
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	border: solid black;
+}
+.wrap:hover .box{
+	background: black;
+	margin-left: 65%;
+}
+.links{
+	
+	margin:10px auto;
+	width: 20%;
+	Background-color: coral;
+	border: solid black;
+	border-radius: 5px;
+}

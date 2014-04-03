@@ -1,0 +1,139 @@
+body{
+	padding-top: 50px;
+	background: #f7f7f7;
+}
+.wrap{
+	position: relative;
+	margin: 0 auto;
+	width: 250px;
+	height: 350px;
+	cursor: pointer;
+}
+.wrap div{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background-position: 50% 50%;
+	background-size: 150px;
+	background-repeat: no-repeat;
+	box-shadow: inset 0 0 45px rgba(255,255,255,.3) 0 12px 20px -10px rgba(0, 0, 0,.4);
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 1px rgba(0,0,0,.3);
+	font: bold 3em sans-serif;
+	line-height: 350px;
+}
+.side-a{
+	background: #09290D url('C:/Users/User/Desktop/webPage/Pictures/kabbalah%20t.gif');
+}
+.side-b{
+	background: #333638 url('C:/Users/User/Desktop/webPage/Pictures/cthulhu-symbol.png');
+}
+.link{
+	text-align: center;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+
+/* ----------------------------Notes---------------------------------*/
+
+/*To make a flip card
+
+*/
+
+/* 
+This (-webkit-perspective) allows the items in the body to gain a 3-d plane
+anything from 800px to 1000px is to be expected.
+
+perspective-origin: takes two values x and y. left center right top bottom
+under 50% to the left, and over 50% to the right.
+*/
+
+
+body{
+	-webkit-perspective: 800px;
+	-webkit-perspective-origin:center-top ;
+}
+
+
+
+.wrap div{
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+}
+
+
+
+.side-a{
+	z-index:100;
+}
+.side-b{
+	-webkit-transform: rotatey(-180deg);
+}
+/*
+We have to "connect" the wrap element with the hover, through placing the 
+webkit hover into the wrap transition.
+*/
+
+.wrap{
+	transition: -webkit-transform, 3s ease;
+	-webkit-transform-style:preserve-3d;
+}
+
+.wrap:hover{
+	-webkit-transform: rotate3d(.5,1,0,360deg); 
+}
+
+
+/*
+.wrap div{
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+}
+.side-b{
+	-webkit-transform: rotatey(-180deg);
+}
+
+.wrap{
+	transition: -webkit-transform, 1s ease;
+	-webkit-transform-style:preserve-3d;
+}
+
+This makes a flip card!
+
+---------------------------------------------------------------------------
+.wrap{
+	transition: -webkit-transform, 1s ease;
+	-webkit-transform-style:preserve-3d;
+}
+This allows the 3d element be passed down to the direct child elements of 
+the wrap div, side a and b
+---------------------------------------------------------------------
+.wrap:hover{
+	-webkit-transform: scaleZ(200)translateZ(100px); 
+}
+Scale Z multiples its value times the translate Z value
+
+-----------------------------------------------------------------------
+.wrap:hover{
+	-webkit-transform: translate3d(100px, 50px, 150px); 
+}
+This moves the picture 100px to the right, 50px down, and 150px towards us!
+------------------------------------------------------------------------
+.wrap:hover{
+	-webkit-transform:rotate3d(1,1,0,1turn); 
+}
+These values are x y z and the angle that it moves along.
+------------------------------------------------------------------
+.wrap:hover{
+	-webkit-transform: translateZ(-15000px); 
+}
+
+This moves the image along the z axis toward the viewer or away.
+
+
+
+
+*/
+
