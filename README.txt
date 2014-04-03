@@ -1,0 +1,1 @@
+This are most of the CSS lessons from Team treehouse, I added some stuff and changed things around to see how the css would react!
